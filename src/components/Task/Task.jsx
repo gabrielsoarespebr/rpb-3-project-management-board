@@ -1,7 +1,9 @@
+const taskTitleStyle = { fontWeight: "bold" };
+
 export const Task = ({ title, body }) => {
   return (
     <div>
-      <p>{title}</p>
+      <p style={taskTitleStyle}>{title}</p>
       <p>{body}</p>
     </div>
   );
