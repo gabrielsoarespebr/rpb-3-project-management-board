@@ -1,6 +1,7 @@
 import "./App.css";
 import { BrowserRouter, Link, Route, Routes } from "react-router-dom";
 import { Board } from "./pages/Board/Board";
+import { Backlog } from "./pages/Backlog/Backlog";
 
 const navStyle = {
   display: "flex",
@@ -33,7 +34,7 @@ function App() {
       </nav>
       <Routes>
         <Route path="/" element={<Board />} />
-        <Route path="/backlog" element={<p>Backlog page</p>} />
+        <Route path="/backlog" element={<Backlog />} />
       </Routes>
     </BrowserRouter>
   );
